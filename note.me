@@ -1,0 +1,13 @@
+# Note
+
+if you want to send the date as an arrya in http server it will throw an error . use have to send that array with JSON.stringfy([1,2,34]).
+
+ie:- 
+
+``` javascript
+res.end(JSON.stringfY([1,2,34])).
+
+res.setHearder("content-type","application/json");
+
+res.write("Hello world");
+```
